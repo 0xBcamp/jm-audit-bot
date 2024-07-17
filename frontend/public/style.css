@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #212121;
+  color: #ccd6e6;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;*/
+  font-style: normal;
+}  
