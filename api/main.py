@@ -18,16 +18,11 @@ def getReport():
         return flask.jsonify({
             'error': 'Address is required'
         })
-
     response = {
         'address': address,
     }
-
-    # r = requests.get(f"https://explorer.mode.network/api/v2/smart-contracts/{address}")
-
+    r = requests.get(f"https://explorer.mode.network/api/v2/smart-contracts/{address}")
 
     return flask.jsonify(response)
-
-
 
 app.run(host='0.0.0.0', port=8000, debug=True)
